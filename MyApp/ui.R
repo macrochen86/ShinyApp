@@ -15,12 +15,15 @@ shinyUI(fluidPage(
             h3("Poisson Mean"),
             textOutput("meanOut"),
             h3("Poisson Variance"),
-            textOutput("varOut")
+            textOutput("varOut"),
+            h4("You can verify mean/variance of Poisson distribution equals mu when input n is large enough")
         ),
 
         # Show a plot of Poisson distribution and associated mean/variance 
         mainPanel(
-             plotOutput("plot1")
+            h3("This is a demo to plot Poisson distribution and calculate mean/variance"),
+            h3("Please input random variablble number n and mu(or lamda) for POisson distribution"),
+            plotOutput("plot1")
              )
     )
 ))
